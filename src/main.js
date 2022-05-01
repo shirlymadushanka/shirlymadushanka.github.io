@@ -6,6 +6,7 @@ import ScrollBar from 'smooth-scrollbar'
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 
 Vue.config.productionTip = false
+
 Vue.use(Typewriter);
 ScrollBar.use(OverscrollPlugin);
 

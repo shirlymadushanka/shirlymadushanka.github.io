@@ -78,6 +78,13 @@
             </div>
           </div>
         </div>
+          <div class="app-profile-social px-3">
+            <a href="https://www.facebook.com/shirly.madushanka/" target="blank"><i class="fa-brands fa-facebook fa-lg" /></a>
+            <a href="https://www.instagram.com/shirly_madushanka/" target="blank"><i class="fa-brands fa-instagram fa-lg" /></a>
+            <a href="https://lk.linkedin.com/in/shirlyekanayake" target="blank"><i class="fa-brands fa-linkedin fa-lg" /></a>
+            <a href="https://github.com/shirlymadushanka" target="blank"><i class="fa-brands fa-github fa-lg" /></a>
+            <a href="https://medium.com/@shirlyekanayake" target="blank"><i class="fa-brands fa-medium fa-lg" /></a>
+          </div>
       </div>
       <div class="app-content">
         <div class="app-bg" style="background-image: url('/img/bg.jpg')">
@@ -148,6 +155,30 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+.app-profile-social a {
+  color: #8c8c8e;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.app-profile-social a:hover {
+  color: #fff;
+  text-shadow: 0 0 3px rgb(250 250 252 / 40%);
+}
+
+.app-profile-social {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+  box-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+}
+
 .knowledge-details {
   list-style: none;
   width: 100%;
@@ -186,6 +217,10 @@ export default {
 .basic-details li {
   display: flex;
   justify-content: space-between;
+}
+
+#sidebar-scrollbar .scrollbar-track.scrollbar-track-y {
+  width: 0;
 }
 
 #sidebar-scrollbar {
